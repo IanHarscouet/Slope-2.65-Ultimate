@@ -122,4 +122,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   controller: {fileID: 0}
-  CoeffAcceleration: 2
+  CoeffAcceleration: 1.2
