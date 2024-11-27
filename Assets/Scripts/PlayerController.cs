@@ -30,8 +30,7 @@ public class PlayerController : MonoBehaviour
         Time.timeScale = 1;
         Score = transform.position.x;
         Physics.gravity = Vector3.down * 9 * CoeffGravity;
-    }
-    // Update is called once per frame
+    }   
     void Update()
     {
         if (isAlive)
