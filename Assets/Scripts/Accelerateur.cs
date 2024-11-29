@@ -9,8 +9,10 @@ public class Accelerateur : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-            controller = other.GetComponent<PlayerController>();
-            controller.Speed *= CoeffAcceleration ;
+            controller = other.GetComponent<PlayerController>();            
+            controller.rb.linearVelocity = new Vector3(CoeffAcceleration* controller.rb.linearVelocity.x, controller.rb.linearVelocity.y, controller.rb.linearVelocity.z);
+                
+                 
         }
     }
 }

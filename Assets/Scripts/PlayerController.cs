@@ -5,11 +5,17 @@ using UnityEngine.SocialPlatforms.Impl;
 
 
 public class PlayerController : MonoBehaviour
-{
-    public float HorizontalMoveSpeed;
+{    
     public float Movement;
     public Rigidbody rb;
     public float Speed;
+    public float SpeedGoalForward;
+    public float ForwardAcceleration;
+
+    
+    public float HorizontalMoveSpeed;
+    public float debugVelocity;
+    
     public GameObject DeathCheck;
     public float CoeffGravity;
     public MeshRenderer mr;
@@ -26,6 +32,7 @@ public class PlayerController : MonoBehaviour
     
     public void Start()
     {
+          
         isAlive = true;
         Time.timeScale = 1;
         Score = transform.position.x;
@@ -35,6 +42,7 @@ public class PlayerController : MonoBehaviour
     {
         if (isAlive)
         {
+            debugVelocity = rb.linearVelocity.x;
             Movement = Input.GetAxisRaw("Horizontal");
             Score = Mathf.Abs(transform.position.x);
             Score = Mathf.Floor(Mathf.Exp(0.01f * Score));
@@ -62,9 +70,9 @@ public class PlayerController : MonoBehaviour
     }
     private void FixedUpdate()
     {
-        rb.linearVelocity = new Vector3(Speed, rb.linearVelocity.y, rb.linearVelocity.z);
-        rb.AddForce(new Vector3(0, 0, Movement * HorizontalMoveSpeed));
-             
+        float friction = Mathf.Pow(0.3f,Time.fixedDeltaTime);        
+        rb.linearVelocity = new Vector3(Mathf.MoveTowards(rb.linearVelocity.x,SpeedGoalForward,ForwardAcceleration*Time.fixedDeltaTime), rb.linearVelocity.y, rb.linearVelocity.z*friction);
+        rb.AddForce(new Vector3(0, 0, HorizontalMoveSpeed * Movement));      
     }
     public void OnPlayerDeath()
     {
