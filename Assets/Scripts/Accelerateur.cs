@@ -12,7 +12,6 @@ public class Accelerateur : MonoBehaviour
             controller = other.GetComponent<PlayerController>();            
             controller.rb.linearVelocity = new Vector3(CoeffAcceleration* controller.rb.linearVelocity.x, controller.rb.linearVelocity.y, controller.rb.linearVelocity.z);
                 
-                 
         }
     }
 }
