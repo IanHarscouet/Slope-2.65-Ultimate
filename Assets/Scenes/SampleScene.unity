@@ -536,8 +536,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1977461605}
-        m_TargetAssemblyTypeName: Rejouer, Assembly-CSharp
-        m_MethodName: lancerPartie
+        m_TargetAssemblyTypeName: MenuManager, Assembly-CSharp
+        m_MethodName: Jouer
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1083,6 +1083,7 @@ MonoBehaviour:
   affichageScore: {fileID: 640343574}
   deplacementFini: 1
   affichageScoreTargetPosition: {x: 0, y: 0}
+  vitre: 0
 --- !u!1 &687399268
 GameObject:
   m_ObjectHideFlags: 0
@@ -1236,6 +1237,7 @@ MonoBehaviour:
   affichageScore: {fileID: 687399270}
   deplacementFini: 1
   affichageScoreTargetPosition: {x: 0, y: 0}
+  vitre: 0
 --- !u!1 &832575517
 GameObject:
   m_ObjectHideFlags: 0
@@ -1517,6 +1519,7 @@ MonoBehaviour:
   affichageScore: {fileID: 1239420557}
   deplacementFini: 1
   affichageScoreTargetPosition: {x: 0, y: 0}
+  vitre: 0
 --- !u!1 &1247366460
 GameObject:
   m_ObjectHideFlags: 0
