@@ -21,20 +21,32 @@ public class PlayerController : MonoBehaviour
     public MeshRenderer mr;
 
     public Canvas ecranfin;
+    public Canvas ScoreUI;
     public TextMeshProUGUI AffichageScore;
     public TextMeshProUGUI AffichageScoreDore;
     public TextMeshProUGUI AffichageScoreRouge;
-    public float Score;
-    public float ScoreDore;
-    public float ScoreRouge;
+    public TextMeshProUGUI AffichageScoreFinalNoir;
+    public TextMeshProUGUI AffichageScoreFinalDore;
+    public TextMeshProUGUI AffichageScoreFinalRouge;
+    public float Score =1;
+    public float ScoreDore = 1;
+    public float ScoreRouge = 1;
     public bool isAlive;
+
     
     
+
+
     public void Start()
     {
           
-        isAlive = true;
-        Time.timeScale = 1;
+        isAlive = true;        
+        if( SceneManager.GetActiveScene().buildIndex != 3)
+        {
+            // utile quand on relance une partie depuis l'écran de défaite
+            Time.timeScale = 1;
+        }
+         
         Score = transform.position.x;
         Physics.gravity = Vector3.down * 9 * CoeffGravity;
     }   
@@ -77,7 +89,11 @@ public class PlayerController : MonoBehaviour
     public void OnPlayerDeath()
     {
         Time.timeScale = 0;
+        AffichageScoreFinalNoir.text = Mathf.Ceil(Score).ToString();
+        AffichageScoreFinalDore.text = Mathf.Ceil(ScoreDore).ToString();
+        AffichageScoreFinalRouge.text = Mathf.Ceil(ScoreRouge).ToString();
         mr.enabled = false;
+        ScoreUI.enabled = false;
         ecranfin.enabled = true;
         isAlive = false;
     }
