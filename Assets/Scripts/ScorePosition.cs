@@ -5,6 +5,7 @@ using UnityEngine.UIElements;
 
 public class ScorePosition : MonoBehaviour
 {
+    // les différent score sont sensé bouger quand le score dépasse un certain seuil mais pas encore au point
     public float vitesse;
     public TextMeshProUGUI affichageScore;
     public bool deplacementFini = true;

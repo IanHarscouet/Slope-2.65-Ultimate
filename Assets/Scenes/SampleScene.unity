@@ -1298,7 +1298,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1541801011
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1776,6 +1776,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ced34f76bfdf1984ea4ecb530a1f7295, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  OptionCanvas: {fileID: 0}
+  LeaderboardCanvas: {fileID: 0}
+  MainCanvas: {fileID: 0}
+  SignInCanvas: {fileID: 0}
 --- !u!4 &1977461606
 Transform:
   m_ObjectHideFlags: 0
@@ -2004,7 +2008,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &2110242619
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2488,6 +2492,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 616093624930050426, guid: b0cda8c0249325f46a78e4e1d43361c2, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 616093624930050426, guid: b0cda8c0249325f46a78e4e1d43361c2, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 593
+      objectReference: {fileID: 0}
     - target: {fileID: 1204422447175096776, guid: b0cda8c0249325f46a78e4e1d43361c2, type: 3}
       propertyPath: m_fontColor.b
       value: 0
@@ -2519,6 +2531,14 @@ PrefabInstance:
     - target: {fileID: 1529708733805702988, guid: b0cda8c0249325f46a78e4e1d43361c2, type: 3}
       propertyPath: m_fontColor.r
       value: 0.9600763
+      objectReference: {fileID: 0}
+    - target: {fileID: 2577362505188643129, guid: b0cda8c0249325f46a78e4e1d43361c2, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2630461543266018583, guid: b0cda8c0249325f46a78e4e1d43361c2, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4931114764644935227, guid: b0cda8c0249325f46a78e4e1d43361c2, type: 3}
       propertyPath: m_Pivot.x
@@ -2603,6 +2623,10 @@ PrefabInstance:
     - target: {fileID: 5836459698456366504, guid: b0cda8c0249325f46a78e4e1d43361c2, type: 3}
       propertyPath: m_fontColor.b
       value: 0.25113
+      objectReference: {fileID: 0}
+    - target: {fileID: 8186932085439309163, guid: b0cda8c0249325f46a78e4e1d43361c2, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

@@ -58,13 +58,14 @@ public class PlayerController : MonoBehaviour
             Movement = Input.GetAxisRaw("Horizontal");
             Score = Mathf.Abs(transform.position.x);
             Score = Mathf.Floor(Mathf.Exp(0.01f * Score));
-            if (Score > 10000000)
+            // le système de plusieurs score n'a pas été implanté de façon satisfaisante à temps
+            /*if (Score > 10000000)
             {
                 Score = Random.Range(1000000, 10000000 - 1);
                 ScoreDore++;
-            }
+            }*/
             AffichageScore.text = Score.ToString();
-            float ScoreDoreExp = (Mathf.Floor(Mathf.Exp(0.005f * ScoreDore)));
+            /*float ScoreDoreExp = (Mathf.Floor(Mathf.Exp(0.005f * ScoreDore)));
             if (ScoreDoreExp > 10000000)
             {
                 ScoreDoreExp = Random.Range(1000000, 10000000 - 1);
@@ -73,7 +74,7 @@ public class PlayerController : MonoBehaviour
             }
             AffichageScoreDore.text = ScoreDoreExp.ToString();
             AffichageScore.text = Score.ToString();
-            AffichageScoreRouge.text = Mathf.Floor(Mathf.Exp(0.001f * ScoreRouge)).ToString();
+            AffichageScoreRouge.text = Mathf.Floor(Mathf.Exp(0.001f * ScoreRouge)).ToString();*/
             if (rb.transform.position.y <= DeathCheck.transform.position.y)
             {
                 OnPlayerDeath();

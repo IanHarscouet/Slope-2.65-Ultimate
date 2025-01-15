@@ -4,16 +4,16 @@ using UnityEngine;
 using UnityEngine.Audio;
 using UnityEngine.UI;
 using UnityEngine.UIElements;
+using TMPro;
 
 public class OptionMenu : MonoBehaviour
 {
     public AudioMixer mixer;
     public Resolution[] possibleResolutions;
-    public Dropdown resolutionsMenu;
+    public TMP_Dropdown resolutionsMenu;
 
     public void Start()
-    {
-        resolutionsMenu = GetComponent<Dropdown>();
+    {        
         possibleResolutions = Screen.resolutions;
         
         List<string> resolutionOptions = new List<string>();
@@ -32,5 +32,10 @@ public class OptionMenu : MonoBehaviour
     public void Fullscreen(bool isfullscreen)
     {
         Screen.fullScreen = isfullscreen;
+    }
+    public void SetResolution(int resolutionIndex)
+    {
+        Resolution resolution = possibleResolutions[resolutionIndex];
+        Screen.SetResolution(resolution.width, resolution.height,Screen.fullScreen);
     }
 }
