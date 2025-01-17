@@ -1046,6 +1046,22 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6855179458766230642, guid: 36af3bd6f793bbf4a9eeef40695b3104, type: 3}
+      propertyPath: m_UiScaleMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6855179458766230642, guid: 36af3bd6f793bbf4a9eeef40695b3104, type: 3}
+      propertyPath: m_MatchWidthOrHeight
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6855179458766230642, guid: 36af3bd6f793bbf4a9eeef40695b3104, type: 3}
+      propertyPath: m_ReferenceResolution.x
+      value: 2560
+      objectReference: {fileID: 0}
+    - target: {fileID: 6855179458766230642, guid: 36af3bd6f793bbf4a9eeef40695b3104, type: 3}
+      propertyPath: m_ReferenceResolution.y
+      value: 1440
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects:
     - {fileID: 6622241248775000350, guid: 36af3bd6f793bbf4a9eeef40695b3104, type: 3}
@@ -2383,7 +2399,7 @@ MonoBehaviour:
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
   m_Interactable: 1
-  m_TargetGraphic: {fileID: 0}
+  m_TargetGraphic: {fileID: 1119954579}
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
@@ -2853,6 +2869,22 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6855179458766230642, guid: 36af3bd6f793bbf4a9eeef40695b3104, type: 3}
+      propertyPath: m_UiScaleMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6855179458766230642, guid: 36af3bd6f793bbf4a9eeef40695b3104, type: 3}
+      propertyPath: m_MatchWidthOrHeight
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6855179458766230642, guid: 36af3bd6f793bbf4a9eeef40695b3104, type: 3}
+      propertyPath: m_ReferenceResolution.x
+      value: 2560
+      objectReference: {fileID: 0}
+    - target: {fileID: 6855179458766230642, guid: 36af3bd6f793bbf4a9eeef40695b3104, type: 3}
+      propertyPath: m_ReferenceResolution.y
+      value: 1440
+      objectReference: {fileID: 0}
     - target: {fileID: 6967895786970661017, guid: 36af3bd6f793bbf4a9eeef40695b3104, type: 3}
       propertyPath: m_IsActive
       value: 1
@@ -3254,6 +3286,11 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!223 &1258263969 stripped
+Canvas:
+  m_CorrespondingSourceObject: {fileID: 1295679688645512729, guid: b0cda8c0249325f46a78e4e1d43361c2, type: 3}
+  m_PrefabInstance: {fileID: 7120772429745362729}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1341072558
 GameObject:
   m_ObjectHideFlags: 0
@@ -4893,7 +4930,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0.000015259, y: 0}
+  m_AnchoredPosition: {x: 0.000015258789, y: 0}
   m_SizeDelta: {x: 0.00012207, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1968458842
@@ -5160,6 +5197,10 @@ PrefabInstance:
       value: -5
       objectReference: {fileID: 0}
     - target: {fileID: 6185333643161088337, guid: 1a03210232477164ebd20dfeff30ddf1, type: 3}
+      propertyPath: ScoreUI
+      value: 
+      objectReference: {fileID: 1258263969}
+    - target: {fileID: 6185333643161088337, guid: 1a03210232477164ebd20dfeff30ddf1, type: 3}
       propertyPath: ecranfin
       value: 
       objectReference: {fileID: 48486208}
@@ -5204,9 +5245,21 @@ PrefabInstance:
       value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 6185333643161088337, guid: 1a03210232477164ebd20dfeff30ddf1, type: 3}
+      propertyPath: AffichageScoreFinalDore
+      value: 
+      objectReference: {fileID: 687399270}
+    - target: {fileID: 6185333643161088337, guid: 1a03210232477164ebd20dfeff30ddf1, type: 3}
+      propertyPath: AffichageScoreFinalNoir
+      value: 
+      objectReference: {fileID: 1239420557}
+    - target: {fileID: 6185333643161088337, guid: 1a03210232477164ebd20dfeff30ddf1, type: 3}
       propertyPath: HorizontalMoveSpeedGoal
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6185333643161088337, guid: 1a03210232477164ebd20dfeff30ddf1, type: 3}
+      propertyPath: AffichageScoreFinalRouge
+      value: 
+      objectReference: {fileID: 640343574}
     - target: {fileID: 6814685901965844436, guid: 1a03210232477164ebd20dfeff30ddf1, type: 3}
       propertyPath: m_LocalPosition.x
       value: 32.51
@@ -5428,6 +5481,22 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6855179458766230642, guid: 36af3bd6f793bbf4a9eeef40695b3104, type: 3}
+      propertyPath: m_UiScaleMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6855179458766230642, guid: 36af3bd6f793bbf4a9eeef40695b3104, type: 3}
+      propertyPath: m_MatchWidthOrHeight
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6855179458766230642, guid: 36af3bd6f793bbf4a9eeef40695b3104, type: 3}
+      propertyPath: m_ReferenceResolution.x
+      value: 2560
+      objectReference: {fileID: 0}
+    - target: {fileID: 6855179458766230642, guid: 36af3bd6f793bbf4a9eeef40695b3104, type: 3}
+      propertyPath: m_ReferenceResolution.y
+      value: 1440
+      objectReference: {fileID: 0}
     - target: {fileID: 8031308951849593583, guid: 36af3bd6f793bbf4a9eeef40695b3104, type: 3}
       propertyPath: m_Color.b
       value: 0.81960785
@@ -5600,6 +5669,22 @@ PrefabInstance:
     - target: {fileID: 4931114764644935227, guid: b0cda8c0249325f46a78e4e1d43361c2, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5948582221751407063, guid: b0cda8c0249325f46a78e4e1d43361c2, type: 3}
+      propertyPath: m_UiScaleMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5948582221751407063, guid: b0cda8c0249325f46a78e4e1d43361c2, type: 3}
+      propertyPath: m_MatchWidthOrHeight
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5948582221751407063, guid: b0cda8c0249325f46a78e4e1d43361c2, type: 3}
+      propertyPath: m_ReferenceResolution.x
+      value: 2560
+      objectReference: {fileID: 0}
+    - target: {fileID: 5948582221751407063, guid: b0cda8c0249325f46a78e4e1d43361c2, type: 3}
+      propertyPath: m_ReferenceResolution.y
+      value: 1440
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

@@ -9,7 +9,7 @@ public class AuthentificationMenu : MonoBehaviour
     public string user;
     public string pass;
     public TextMeshProUGUI UserNameUI;
-    public void SignUp()
+    /*public void SignUp()
     {
          user = UsernameInput.text.Trim();
          pass = passwordInput.text.Trim();
@@ -48,5 +48,5 @@ public class AuthentificationMenu : MonoBehaviour
         
         UserNameUI.text = AuthenticationService.Instance.PlayerName;
         
-    }
+    }*/
 }

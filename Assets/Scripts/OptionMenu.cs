@@ -11,6 +11,7 @@ public class OptionMenu : MonoBehaviour
     public AudioMixer mixer;
     public Resolution[] possibleResolutions;
     public TMP_Dropdown resolutionsMenu;
+    public float baseVolume = -20;
 
     public void Start()
     {        
@@ -24,6 +25,8 @@ public class OptionMenu : MonoBehaviour
             resolutionOptions.Add(Option);
         }
         resolutionsMenu.AddOptions(resolutionOptions);
+        SetVolume(baseVolume);
+        
     }
     public void SetVolume(float volume)
     {

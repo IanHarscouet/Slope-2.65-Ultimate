@@ -1,5 +1,4 @@
 using JetBrains.Annotations;
-using UnityEditor.SearchService;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
@@ -20,10 +19,10 @@ public class MenuManager : MonoBehaviour
         {
             Debug.LogError("Doublon Menu Manager");
         }
-        Instance = this; 
-        StartClientService();
+        Instance = this;
+        //StartClientService();
     }
-    public async void StartClientService()
+    /*public async void StartClientService()
     {
         if (UnityServices.State != ServicesInitializationState.Initialized)
         {
@@ -59,7 +58,7 @@ public class MenuManager : MonoBehaviour
     {
          AuthenticationService.Instance.SignOut(true);
 
-    }
+    }*/
 
 
     public static void Jouer()
